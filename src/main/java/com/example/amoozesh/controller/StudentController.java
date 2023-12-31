@@ -5,7 +5,7 @@ import com.example.amoozesh.model.Teacher;
 import com.example.amoozesh.repository.StudentRepository;
 import com.example.amoozesh.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PostMapping;git
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

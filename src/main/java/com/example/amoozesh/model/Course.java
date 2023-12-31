@@ -16,7 +16,7 @@ public class Course {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator="course_seq")
-    @SequenceGenerator(name="course_seq", sequenceName = "person_seq", allocationSize = 10000)
+    @SequenceGenerator(name="course_seq", sequenceName = "course_seq", allocationSize = 10000)
     private long id;
     @Enumerated(EnumType.STRING)
     private CourseType courseType;

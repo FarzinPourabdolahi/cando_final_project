@@ -1,7 +1,7 @@
 package com.example.amoozesh.controller;
 
-import com.example.amoozesh.model.Teacher;
-import com.example.amoozesh.service.TeacherService;
+import com.example.amoozesh.model.Course;
+import com.example.amoozesh.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -9,13 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("teacher")
-public class TeacherController {
+@RequestMapping("course")
+public class CourseController {
+
     @Autowired
-    private TeacherService teacherService;
-    @PostMapping("saveteacher")
-    public Teacher save(@RequestBody Teacher teacher)
+    private CourseService courseService;
+    @PostMapping("save")
+    public Course save(@RequestBody Course course)
     {
-        return teacherService.save(teacher);
+        return courseService.save(course);
     }
 }

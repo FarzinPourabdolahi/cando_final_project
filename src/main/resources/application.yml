@@ -5,11 +5,11 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/AMOOZESH
     username: postgres
-    password: postgres
+    password: Farzin
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     show-sql: true
 
 

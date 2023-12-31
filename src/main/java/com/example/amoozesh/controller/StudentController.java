@@ -1,8 +1,6 @@
 package com.example.amoozesh.controller;
 
 import com.example.amoozesh.model.Student;
-import com.example.amoozesh.model.Teacher;
-import com.example.amoozesh.repository.StudentRepository;
 import com.example.amoozesh.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

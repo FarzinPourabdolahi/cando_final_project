@@ -1,12 +1,13 @@
 package com.example.amoozesh.repository;
 
-import com.example.amoozesh.model.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.amoozesh.model.Course;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student,Long> {
-    public Optional<Student> findByStudentnum(Student student);
+public interface CourseRepository extends JpaRepository<Course, Long> {
+
+    public Optional<Course> findByCourseCode(Course course);
 }
